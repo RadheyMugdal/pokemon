@@ -6,7 +6,7 @@ function App() {
   const [pokemonData, setPokemonData] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  useEffect(() => {    
     if (!searchInput) return; 
     const timeoutId = setTimeout(() => {
       console.log("search input", searchInput);
@@ -28,7 +28,7 @@ function App() {
     <main className='bg-zinc-700 text-white w-screen h-screen'>
       <h1 className='text-center text-3xl font-extrabold p-4'>Search and get details of your favorite Pokémon</h1>
       <div className='flex flex-col items-center m-3'>
-        <input type="search" placeholder='Enter your Pokémon name' className='p-2 rounded-lg mx-auto w-[40vw] focus:outline-none text-black' value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
+        <input type="search" placeholder='Enter your Pokemon name' className='p-2 rounded-lg mx-auto w-[40vw] focus:outline-none text-black' value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
       </div>
       <div className=''>
         
@@ -51,7 +51,7 @@ function App() {
         )}
         {!pokemonData && searchInput && (
           <div className='mx-auto w-fit'>
-            <h1 className='p-6 text-3xl font-bold'>Cannot find Pokémon with the given name</h1>
+            <h1 className='p-6 text-3xl font-bold'>Cannot find Pokemon with the given name</h1>
           </div>
         )}
       </div>
