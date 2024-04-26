@@ -41,7 +41,7 @@ function App() {
               } </h1>
             </div>
             :
-             <div className=' flex flex-col items-center justify-center bg-orange-400 p-6 rounded-lg'>
+             <div className=' flex flex-col items-center justify-center bg-purple-400 p-6 rounded-lg'>
               <img src={pokemondata?.sprites?.front_default} alt="pokemon-image"  className= ' w-52  ' />
               <div>
               <p className=' text-center font-semibold text-lg' >{` Base experience: ${pokemondata?.base_experience}`}</p>
